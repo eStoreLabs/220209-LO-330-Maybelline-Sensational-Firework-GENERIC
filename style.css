@@ -357,9 +357,6 @@
   max-width: 470px;
   overflow: hidden;
 }
-#es-maybelline.es-maybelline .es-ba__before:hover .es-ba__img {
-  transform: scale(1.1);
-}
 @media (min-width: 576px) {
   #es-maybelline.es-maybelline .es-ba__before {
     flex-basis: 50%;
@@ -368,9 +365,6 @@
 #es-maybelline.es-maybelline .es-ba__after {
   max-width: 470px;
   overflow: hidden;
-}
-#es-maybelline.es-maybelline .es-ba__after:hover .es-ba__img {
-  transform: scale(1.1);
 }
 @media (min-width: 576px) {
   #es-maybelline.es-maybelline .es-ba__after {
@@ -384,7 +378,7 @@
   transition: all 0.3s;
 }
 #es-maybelline.es-maybelline .es-ba__img:hover {
-  scale: 1.1;
+  scale: 1.06;
 }
 #es-maybelline.es-maybelline .es-ba__text {
   margin: 0;

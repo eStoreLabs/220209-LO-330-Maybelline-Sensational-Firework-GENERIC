@@ -538,13 +538,6 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
         max-width: 470px;
         overflow: hidden;
 
-
-        &:hover {
-            .es-ba__img {
-                transform: scale(1.1);
-            }
-        }
-
         @media (min-width: 576px) {
             flex-basis: 50%;
         }
@@ -553,12 +546,6 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
     .es-ba__after {
         max-width: 470px;
         overflow: hidden;
-
-        &:hover {
-            .es-ba__img {
-                transform: scale(1.1);
-            }
-        }
 
         @media (min-width: 576px) {
             flex-basis: 50%;
@@ -572,7 +559,7 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
         transition: all 0.3s;
 
         &:hover {
-            scale: 1.1;
+            scale: 1.06;
         }
     }
 
