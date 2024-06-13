@@ -232,6 +232,7 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
         animation: slideright 0.6s forwards;
         -webkit-animation-delay: 0.4s;
         animation-delay: 0.4s;
+
         &--span {
             display: block;
             color: $color_3;
@@ -249,7 +250,7 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
     .es-kv__info {
         position: absolute;
         top: 48px;
-    left: 48px;
+        left: 48px;
         z-index: 2;
         opacity: 0;
         -webkit-animation: slideleft 0.8s forwards;
@@ -314,14 +315,17 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
     .es-features__single {
         width: 307px;
     }
+
     .es-features__tile {
         overflow: hidden;
     }
+
     .es-features__img {
         max-width: 100%;
         display: block;
         margin: 0 auto;
         transition: all ease-in-out 200ms;
+
         &:hover {
             scale: 1.1;
         }
@@ -351,121 +355,6 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
         letter-spacing: -1px;
     }
 
-    // .es-benefits {
-    //     margin-bottom: 48px;
-    // }
-
-    // .es-benefits__title {
-    //     margin: 0;
-    //     padding: 0;
-    //     line-height: inherit;
-    //     font-weight: 700;
-    //     text-transform: uppercase;
-    //     font-size: 42px;
-    //     letter-spacing: -1px;
-    //     margin-bottom: 64px;
-    //     font-family: $font-family_4;
-    // }
-
-    // .es-benefits__container {
-    //     display: -webkit-box;
-    //     display: -ms-flexbox;
-    //     display: flex;
-    //     -webkit-box-orient: vertical;
-    //     -webkit-box-direction: normal;
-    //     -ms-flex-flow: column;
-    //     flex-flow: column;
-    //     gap: 32px;
-    // }
-
-    // .es-benefits__image {
-    //     display: none;
-    // }
-
-    // .es-benefits__img {
-    //     max-width: 100%;
-    //     display: block;
-    //     margin: 0 auto;
-    //     margin-right: 0;
-    // }
-
-    // .es-benefits__content {
-    //     padding: 0 16px;
-    // }
-
-    // .es-benefits__item {
-    //     display: -webkit-box;
-    //     display: -ms-flexbox;
-    //     display: flex;
-    //     gap: 16px;
-    //     margin-bottom: 64px;
-
-    //     &:nth-child(2) {
-    //         .es-benefits__text {
-    //             width: 100%;
-    //             max-width: 240px;
-    //         }
-    //     }
-
-    //     &:nth-child(3) {
-    //         .es-benefits__text {
-    //             width: 100%;
-    //             max-width: 340px;
-    //         }
-    //     }
-
-    //     &:nth-child(4) {
-    //         .es-benefits__text {
-    //             width: 100%;
-    //             max-width: 440px;
-    //         }
-    //     }
-
-    //     &:nth-child(5) {
-    //         .es-benefits__text {
-    //             width: 100%;
-    //             max-width: 540px;
-    //         }
-    //     }
-    // }
-
-    // .es-benefits__sup {
-    //     line-height: 0;
-    //     font-size: 0.5em;
-    // }
-
-    // .es-benefits__number {
-    //     margin: 0;
-    //     padding: 0;
-    //     line-height: inherit;
-
-
-    //     font-weight: inherit;
-    //     font-size: 68px;
-    //     font-weight: 700;
-    //     line-height: 1;
-    // }
-
-    // .es-benefits__text {
-    //     margin: 0;
-    //     padding: 0;
-    //     line-height: inherit;
-
-
-    //     font-weight: inherit;
-    //     padding-top: 16px;
-    //     font-weight: 700;
-    //     text-transform: uppercase;
-    //     font-size: 19px;
-    //     border-top: 2px solid #000;
-    //     margin-top: 11px;
-    //     font-family: $font-family_4;
-    // }
-
-    .es-background-white {
-        background-image: url(images/bg-white.png);
-    }
-
     .es-colors {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -478,16 +367,17 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
         -ms-flex-align: center;
         align-items: center;
         padding: 0 16px;
-        margin-bottom: 80px;
+        background-image: url("./images/cross-bg.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-block: 64px;
     }
 
     .es-colors__title {
         margin: 0;
         padding: 0;
         line-height: inherit;
-
-
-        font-weight: inherit;
         font-weight: 700;
         text-transform: uppercase;
         font-size: 32px;
@@ -502,6 +392,11 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
 
     .es-colors__title--span {
         font-weight: 300;
+    }
+
+    .es-colors__single {
+        // width: 85%;
+        
     }
 
     .es-colors__container {
@@ -523,64 +418,77 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
     }
 
     .es-colors__single {
-        width: 170px;
+        // width: 170px;
 
         &:hover {
             .es-colors__link {
-                color: $color_5;
+                background-color: $color_1;
             }
         }
+    }
+
+    .es-colors__tile {
+        height: 285px;
+    }
+
+    .es-colors__eye {
+        margin-left: 0;
+        max-width: 140px;
+    }
+
+    .es-colors__mascara {
+        margin-top: -166px;
+        margin-left: 50px;
+        height: 285px;
     }
 
     .es-colors__text {
         margin: 0;
         padding: 0;
         line-height: inherit;
-
-
-        font-weight: inherit;
-        font-size: 18px;
+        font-size: 28px;
         margin-top: 24px;
-        border-top: 2px solid #000;
         font-weight: 700;
-        padding: 16px 0;
         text-align: center;
         text-transform: uppercase;
         font-family: $font-family_4;
+        font-style: italic;
+        color: $color_main;
+
+        &--line {
+            font-size: 20px;
+            display: block;
+        }
+
+        &--desc {
+            font-family: $font-family_3;
+            text-align: center;
+        }
     }
 
     .es-colors__link {
         margin: 0;
         padding: 0;
         line-height: inherit;
-
-
-        font-weight: inherit;
         font-size: 18px;
         font-weight: 700;
         padding: 16px 0;
         text-align: center;
         text-transform: uppercase;
         font-family: $font-family_4;
-        background: #000;
+        background: $color_main;
         color: $color_3;
         display: block;
-        text-decoration: none;
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
-    }
-
-    .es-ba__sup {
-        line-height: 0;
-        font-size: 0.5em;
+        font-style: italic;
+        border-radius: 99px;
+        margin-top: -67px;
+        margin-left: 141px;
     }
 
     .es-ba__single {
         width: 333px;
-    }
-
-    .es-ba {
-        margin-bottom: 80px;
     }
 
     .es-ba__title {
@@ -605,16 +513,36 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        gap: 16px;
+        gap: 4px;
         margin-bottom: 32px;
+        padding-inline: 32px;
+
+        @media (min-width: 576px) {
+            flex-wrap: nowrap;
+        }
     }
 
     .es-ba__before {
+        max-width: 470px;
+        overflow: hidden;
+
+
+        &:hover {
+            .es-ba__img {
+                transform: scale(1.1);
+            }
+        }
+
+        @media (min-width: 576px) {
+            flex-basis: 50%;
+        }
+    }
+
+    .es-ba__after {
         max-width: 470px;
         overflow: hidden;
 
@@ -623,15 +551,9 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
                 transform: scale(1.1);
             }
         }
-    }
 
-    .es-ba__after {
-        max-width: 470px;
-        overflow: hidden;
-        &:hover {
-            .es-ba__img {
-                transform: scale(1.1);
-            }
+        @media (min-width: 576px) {
+            flex-basis: 50%;
         }
     }
 
@@ -640,6 +562,7 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
         display: block;
         margin: 0 auto;
         transition: all 0.3s;
+
         &:hover {
             scale: 1.1;
         }
@@ -674,6 +597,7 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
         background-position: center;
         background-size: cover;
     }
+
     .es-ba__content--2 {
         background-image: url("./images/fireworks-bg-2.png");
         background-position: top right;
@@ -694,6 +618,113 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
         text-transform: uppercase;
         margin-top: 16px;
     }
+
+    .es-effects {
+        display: flex;
+        flex-direction: column;
+        padding-block: 32px;
+
+        @media (min-width: 576px) {
+            flex-direction: row;
+            gap: 4px;
+        }
+
+        @media (min-width: 768px) {
+            padding-inline: 32px;
+        }
+
+        &__leftCtn {
+            background-image: url("./images/effects.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #FFF;
+            aspect-ratio: 1/1;
+            padding-block: 32px;
+
+            @media (min-width: 576px) {
+                flex-basis: 50%;
+                padding-inline: 32px;
+            }
+
+        }
+
+        &__rightCtn {
+            display: flex;
+            aspect-ratio: 1/1;
+
+            img {
+                max-width: 100%;
+            }
+
+            @media (min-width: 576px) {
+                flex-basis: 50%;
+            }
+        }
+
+        &__title {
+            color: #FFF;
+            text-transform: uppercase;
+            font-size: 32px;
+            text-align: center;
+            margin: 0;
+            margin-bottom: 32px;
+        }
+
+        &__text {
+            @media (min-width: 576px) {
+                height: 4rem;
+            }
+
+            @media (min-width: 850px) {
+                height: 3rem;
+            }
+        }
+
+        &__Ctn {
+            @media (min-width: 576px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                place-items: center;
+            }
+
+        }
+
+        &__single {
+            text-align: center;
+            text-wrap: balance;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-family: $font-family_4;
+            font-weight: 300;
+            width: 100%;
+        }
+
+        &__number {
+            color: $color_main;
+            font-size: 32px;
+            font-weight: 700;
+            width: 50px;
+            height: 50px;
+            margin: auto;
+            border: 1px solid $color_main;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+
+            p {
+                margin: 0;
+            }
+
+            @media (min-width: 576px) {
+                font-size: 48px;
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+
 
     .es-disc {
         margin: 0 16px;
@@ -852,7 +883,7 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
         padding: 20px 16px;
     }
 
-    
+
 }
 
 @media screen and (min-width: 668px) {
@@ -990,7 +1021,7 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
             transition: all 0.3s;
         }
 
-        
+
 
         .es-features__single {
             &:hover {
@@ -1000,14 +1031,14 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
             }
         }
 
-        .es-colors__img {
+        .es-colors__mascara {
             -webkit-transition: all 0.3s;
             transition: all 0.3s;
         }
 
         .es-colors__single {
             &:hover {
-                .es-colors__img {
+                .es-colors__mascara {
                     -webkit-transform: scale(1.1);
                     transform: scale(1.1);
                 }
@@ -1043,29 +1074,6 @@ $font-family_4: "Barlow Condensed", Tahoma, Verdana, sans-serif;
     #es-maybelline.es-maybelline {
         .es-kv__title {
             font-size: 48px;
-        }
-
-        .es-ba {
-            padding: 32px 16px;
-            border-radius: 25px;
-            border: solid white 2px;
-            max-width: 900px;
-            margin-inline: auto;
-            margin-top: -120px;
-        }
-
-        .es-ba__container {
-            margin-bottom: 64px;
-            -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
-        }
-
-        .es-ba__before {
-            min-width: 460px;
-        }
-
-        .es-ba__after {
-            min-width: 460px;
         }
     }
 }
